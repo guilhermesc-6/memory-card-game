@@ -3,3 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  font-family: "Faster One", cursive;
+}
+header img {
+  width: 100px;
+}
