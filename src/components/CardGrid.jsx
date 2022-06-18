@@ -43,6 +43,26 @@ export const CardGrid = ({ score, setScore, bestScore, setBestScore }) => {
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sebastian_Vettel_2015_Malaysia_podium_1.jpg/320px-Sebastian_Vettel_2015_Malaysia_podium_1.jpg",
       name: "Sebastian Vettel",
     },
+    {
+      image:
+        "https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.1024.medium.jpg/1646819266274.jpg",
+      name: "Valtteri Bottas",
+    },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nico_Rosberg_2016_Malaysia_1.jpg/320px-Nico_Rosberg_2016_Malaysia_1.jpg",
+      name: "Nico Rosberg",
+    },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Daniel_at_2014_Italian_Grand_Prix_%2803%29.jpg/320px-Daniel_at_2014_Italian_Grand_Prix_%2803%29.jpg",
+      name: "Daniel Ricciardo",
+    },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Charles-Leclerc.jpg/320px-Charles-Leclerc.jpg",
+      name: "Charles Leclerc",
+    },
   ]);
   const [selectedCard, setSelectedCards] = useState([]);
   const [reset, setReset] = useState(false);
@@ -77,6 +97,7 @@ export const CardGrid = ({ score, setScore, bestScore, setBestScore }) => {
       setSelectedCards([]);
     }
   }, [reset]);
+
   return (
     <div className="main">
       <h4>

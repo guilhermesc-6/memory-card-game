@@ -60,10 +60,35 @@ header .logo img {
   align-items: center;
   color: #f8f4f9;
   border-radius: 20px;
+  cursor: pointer;
 }
 .card img {
   align-self: center;
   width: 250px;
   height: 300px;
   background-position: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background: radial-gradient(
+    circle,
+    rgba(225, 6, 0, 1) 0%,
+    rgba(225, 6, 0, 1) 61%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #c9d1d9;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
 }

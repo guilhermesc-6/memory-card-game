@@ -10,6 +10,7 @@ export const Header = ({ score, bestScore }) => {
       <div className="score-board">
         <span>Score: {score}</span>
         <span>Best Score: {bestScore}</span>
+        <span>Max Score: 12</span>
       </div>
     </header>
   );
