@@ -1,24 +1,20 @@
+import { useState } from "react";
 import "./App.css";
-import { Board } from "./components/Board";
+import { CardGrid } from "./components/CardGrid";
+import { Header } from "./components/Header";
 
 function App() {
+  const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
   return (
     <div className="App">
-      <header>
-        <h1>Memory Card Game</h1>
-        <span>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/1/1b/F1logo_2018.png"
-            alt="formula one logo"
-          />
-          Edition
-        </span>
-        <div className="score-board">
-          <span>Score: 0</span>
-          <span>Best Score: 0</span>
-        </div>
-      </header>
-      <Board />
+      <Header score={score} bestScore={bestScore} />
+      <CardGrid
+        score={score}
+        setScore={setScore}
+        bestScore={bestScore}
+        setBestScore={setBestScore}
+      />
     </div>
   );
 }
